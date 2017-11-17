@@ -1,0 +1,54 @@
+% Style file for LSU color scheme: purple and gold
+% Modified by Alex Pacheco, High Performance Computing, Louisiana State University.
+%  wget http://www.cct.lsu.edu/~apacheco/tutorials/TeX/beamercolorthemetigers.sty
+%  Dated: Oct 28 2010
+%  Email <apacheco_at_cct.lsu.edu> for comments or modifications.
+% Below is the original copyright and license information:
+% -------------------------------------------------------------------------------------------
+% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+% --------------------------------------------------------------------------------------------
+\ProvidesPackageRCS $Header: /usr/local/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemetigers.sty,v 1 2010/10/28 09:11:41 $
+
+\mode<presentation>
+
+\definecolor{tigersgold}{RGB}{253,208,35}
+\definecolor{tigerspurple}{RGB}{70,29,124}
+\definecolor{tigersblue}{RGB}{52,0,252}
+
+\setbeamercolor{structure}{fg=tigerspurple}
+
+\setbeamercolor{palette primary}{fg=black,bg=tigersgold}
+\setbeamercolor{palette secondary}{fg=tigersgold,bg=tigerspurple!75!black}
+\setbeamercolor{palette tertiary}{fg=black,bg=tigersgold!90!black}
+\setbeamercolor{palette quaternary}{fg=tigersgold!90!black,bg=tigerspurple}
+
+\setbeamercolor{titlelike}{parent=palette quaternary}
+
+\setbeamercolor{block title}{fg=tigersgold,bg=tigerspurple}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{fg=tigerspurple,bg=tigersgold}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!25!bg}
+%\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.fg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!25!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!25!bg}
+
+\setbeamercolor{sidebar}{bg=tigersgold!70}
+  
+\setbeamercolor{palette sidebar primary}{fg=tigerspurple}
+\setbeamercolor{palette sidebar secondary}{fg=tigerspurple!75}
+\setbeamercolor{palette sidebar tertiary}{fg=tigerspurple!75}
+\setbeamercolor{palette sidebar quaternary}{fg=tigerspurple}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\mode
+<all>
